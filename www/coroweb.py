@@ -39,7 +39,6 @@ def post(path):
         return wrapper
     return decorator
 
-
 def get_required_kw_args(fn):
     args = []
     params = inspect.signature(fn).parameters
